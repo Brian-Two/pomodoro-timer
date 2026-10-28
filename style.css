@@ -86,6 +86,33 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+.duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.duration input {
+  width: 80px;
+  padding: 8px 12px;
+  border: 2px solid var(--track);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--text);
+  font: 500 1rem "JetBrains Mono", ui-monospace, monospace;
+  text-align: center;
+}
+
+.duration input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.duration input:disabled { opacity: 0.5; }
+
 .controls {
   display: flex;
   gap: 12px;
