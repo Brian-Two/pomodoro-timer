@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1 class="label">Focus</h1>
+
+    <div class="ring-wrap">
+      <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
+        <circle class="ring-track" cx="100" cy="100" r="90" />
+        <circle class="ring-progress" id="progress" cx="100" cy="100" r="90" />
+      </svg>
+      <div class="time" id="time" role="timer" aria-live="polite">25:00</div>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn" class="btn primary">Start</button>
+      <button id="resetBtn" class="btn">Reset</button>
+    </div>
+
+    <p class="status" id="status">Ready when you are.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
